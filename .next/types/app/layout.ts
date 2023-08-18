@@ -1,4 +1,4 @@
-// File: C:\Users\Dmitriy\Desktop\Дима\dev\purpleSchool\app\layout.tsx
+// File: /home/dmitriy/Рабочий стол/dev/purpleschool/next-JS/app/layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
