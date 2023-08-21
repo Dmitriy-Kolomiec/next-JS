@@ -3,6 +3,8 @@ import './app.css';
 import { Noto_Sans_KR } from 'next/font/google';
 import { Header } from '@/components/Header/Header';
 import { Footer } from '@/components/Footer/Footer';
+import classNames from 'classnames';
+import styles from './layout.module.css';
 
 // const inter = Noto_Sans_KR({ subsets: ['latin'] })
 const inter = Noto_Sans_KR({
@@ -18,13 +20,11 @@ const inter = Noto_Sans_KR({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Header />
-        <div>
-          <Sidebar />
-          <div>{children}</div>
-        </div>
-        <Footer />
+      <body className={classNames([inter.className, styles.wrapper])}>
+        <Header className={styles.header} />
+        <Sidebar className={styles.sidebar} />
+        <div className={styles.body}>{children}</div>
+        <Footer className={styles.footer} />
       </body>
     </html>
   );
