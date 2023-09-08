@@ -4,7 +4,7 @@ import { Noto_Sans_KR } from 'next/font/google';
 import { Header } from '@/components/Header/Header';
 import { Footer } from '@/components/Footer/Footer';
 import classNames from 'classnames';
-import styles from './layout.module.css';
+import styles from '../styles/layout.module.css';
 
 // const inter = Noto_Sans_KR({ subsets: ['latin'] })
 const inter = Noto_Sans_KR({

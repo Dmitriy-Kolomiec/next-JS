@@ -1,11 +1,17 @@
-import { Button } from '@/components/Button/Button';
-import { Htag } from '@/components/Htag/Htag';
-import { Paragraph } from '@/components/Paragraph/Paragraph';
+import { getMenu } from '@/api/menu';
+import { Menu } from '@/components/Menu/menu';
+import { Metadata } from 'next';
 
-export default function Home() {
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: 'Главная',
+  };
+}
+
+export default async function Home() {
   return (
-    <>
-      <Htag tag="h1">Курсы по Photoshop</Htag>
+    <main>
+      {/* <Htag tag="h1">Курсы по Photoshop</Htag>
       <Button appearance="primary" arrow="down">
         Кнопка
       </Button>
@@ -16,7 +22,9 @@ export default function Home() {
         Студенты освоят не только hard skills, необходимые для работы веб-дизайнером, но и soft skills — навыки, которые
         позволят эффективно взаимодействовать в команде с менеджерами, разработчиками и маркетологами. Выпускники
         факультета могут успешно конкурировать с веб-дизайнерами уровня middle.
-      </Paragraph>
-    </>
+      </Paragraph> */}
+      <h1> Главная страница</h1>
+      <Menu />
+    </main>
   );
 }

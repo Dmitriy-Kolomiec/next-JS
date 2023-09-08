@@ -20,3 +20,5 @@ yarn-error.log*
 .pnp.js
 .vercel
 yarn.lock
+
+.env.local

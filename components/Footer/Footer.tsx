@@ -13,3 +13,5 @@ export const Footer = ({ className, ...props }: FooterProps) => {
     </footer>
   );
 };
+
+
